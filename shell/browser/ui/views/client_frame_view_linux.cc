@@ -202,7 +202,7 @@ int ClientFrameViewLinux::NonClientHitTest(const gfx::Point& point) {
   for (auto& button : nav_buttons_) {
     if (button.button->GetVisible() &&
         button.button->GetMirroredBounds().Contains(point)) {
-      return button.hit_test_id;
+      return HTCLIENT;
     }
   }
 
